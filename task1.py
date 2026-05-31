@@ -89,10 +89,9 @@ plt.show()
 #correlationHeatmap
 plt.figure(figsize=(8,6))
 
-sns.heatmap(df.corr(),
-            annot=True,
-            cmap='coolwarm')
+sns.heatmap(df.corr(), annot=True, cmap='coolwarm')
 
 plt.title("Correlation Heatmap")
+
 plt.savefig("heatmap.png", dpi=300, bbox_inches='tight')
 plt.show()
