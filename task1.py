@@ -53,6 +53,7 @@ plt.figure(figsize=(10,5))
 sns.boxplot(data=df[['Age','Fare']])
 
 plt.title("Boxplot for Outlier Detection")
+plt.savefig("boxplot_outliers.png", dpi=300, bbox_inches='tight')
 plt.show()
 
 #RemoveOutliersUsingIQRMethod
