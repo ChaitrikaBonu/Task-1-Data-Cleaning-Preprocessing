@@ -84,6 +84,7 @@ print("Cleaned dataset saved successfully!")
 #SurvivalCount
 sns.countplot(x='Survived', data=df)
 plt.title("Survival Count")
+plt.savefig("survival_count.png", dpi=300, bbox_inches='tight')
 plt.show()
 #correlationHeatmap
 plt.figure(figsize=(8,6))
@@ -93,4 +94,5 @@ sns.heatmap(df.corr(),
             cmap='coolwarm')
 
 plt.title("Correlation Heatmap")
+plt.savefig("heatmap.png", dpi=300, bbox_inches='tight')
 plt.show()
